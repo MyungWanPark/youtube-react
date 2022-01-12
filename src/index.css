@@ -20,3 +20,8 @@ code {
   /* font-style: italic; */
   font-weight: 400;
 }
+
+#root {
+  display: flex;
+  justify-content: center;
+}

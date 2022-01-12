@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  background-color: black;
+  padding: 10px;
+  height: 70px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.img {
+  height: 50px;
+  width: 50px;
+}
+
+.h1 {
+  color: white;
+}
+
+.input {
+  flex-basis: 100%;
+  font-size: 24px;
+  outline: none;
+}
+
+.btn {
+  background-color: darkgrey;
+}
+
+.btn_img {
+  padding: 10px;
+  height: 100%;
+}
