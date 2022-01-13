@@ -28,7 +28,7 @@ function App({ youtube }) {
   useEffect(() => {
     youtube
       .popularVideos()
-      .then((videos) => setVideo(videos.items))
+      .then((videos) => setVideo(videos))
       .catch((error) => console.log("error", error));
   }, [youtube]);
 
