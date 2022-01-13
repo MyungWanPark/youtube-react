@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import styles from "./app.module.css";
 import SearchHeader from "./components/search_header/search_header";
 import VideoDetail from "./components/video_detail/video_detail";
@@ -14,19 +14,23 @@ function App({ youtube }) {
 
   const display = selectedVideo ? "list" : "grid";
 
-  const onSearch = (query) => {
-    youtube
-      .search(query)
-      .then((items) => setVideo(items))
-      .catch((error) => console.log("error", error));
-  };
+  const onSearch = useCallback(
+    (query) => {
+      setSelectedVideo(null);
+      youtube
+        .search(query)
+        .then((items) => setVideo(items))
+        .catch((error) => console.log("error", error));
+    },
+    [youtube]
+  );
 
   useEffect(() => {
     youtube
       .popularVideos()
       .then((videos) => setVideo(videos.items))
       .catch((error) => console.log("error", error));
-  }, []);
+  }, [youtube]);
 
   return (
     <div className={styles.app}>
