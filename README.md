@@ -5,7 +5,6 @@
 > 기술 Stack: React.js, JS(ES6+), PostCSS, HTML5
 
 <br />
-<br />
 ### Landing Page
 
 가장 인기있는 비디오 25개를 골라서 보여줍니다.
