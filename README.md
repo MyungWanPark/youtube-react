@@ -1,7 +1,6 @@
 ## Introduction
 
 <br />
-<br />
 
 유튜브 API를 활용하여 얻은 데이터로 영상 검색, 리스트업, 시청 기능과 반응형 웹페이지를 구현하였습니다.
 
@@ -12,6 +11,8 @@
 
 ### Landing Page
 
+<br />
+
 가장 인기있는 비디오 25개를 골라서 보여줍니다.
 
 <img width="960" alt="popular_video" src="https://user-images.githubusercontent.com/56289900/154404255-c6905df0-544a-443c-b988-5199faf30ad1.PNG">
@@ -20,6 +21,8 @@
 <br />
 
 ### Search result
+
+<br />
 
 검색창에 'bts' 라고 검색한 결과 입니다.
 
@@ -30,6 +33,8 @@
 
 ### Video Detail
 
+<br />
+
 비디오 썸네일을 클릭했을때, 나오는 상세 비디오 페이지 입니다.
 
 <img width="960" alt="video_detail" src="https://user-images.githubusercontent.com/56289900/154404585-8ad9708c-2c1c-4bed-9d0c-9cf45b0d8504.PNG">
@@ -38,6 +43,8 @@
 <br />
 
 ### Responsive View
+
+<br />
 
 브라우저 크기를 작게 조절했을 때 비디오를 보기 편하도록 반응형으로 제작하였습니다.
 
