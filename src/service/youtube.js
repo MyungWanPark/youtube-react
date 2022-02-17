@@ -28,7 +28,10 @@ class Youtube {
         q: query,
       },
     });
-    return response.data.items;
+    return response.data.items.map((item) => ({
+      ...item,
+      id: item.id.videoId,
+    }));
   }
 }
 export default Youtube;

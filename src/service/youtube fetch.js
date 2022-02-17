@@ -9,7 +9,7 @@ class Youtube {
 
   search(query) {
     return fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=25&q=${query}&&key=${this.key}`,
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=25&q=${query}&key=${this.key}`,
       this.getRequestOptions
     )
       .then((response) => response.json())

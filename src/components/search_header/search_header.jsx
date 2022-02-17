@@ -4,7 +4,8 @@ import React, { memo, useRef } from "react";
 const SearchHeader = memo(({ onSearch }) => {
   const inputRef = useRef();
   const handleSearch = () => {
-    onSearch(inputRef.current.value);
+    const value = inputRef.current.value;
+    onSearch(value);
   };
 
   const onKeyDown = (event) => {

@@ -5,11 +5,11 @@ const VideoDetail = ({ video }) => {
   return (
     <section className={styles.video}>
       <iframe
-        title={video.id}
+        title="youtube video player"
         type="text/html"
         width="100%"
-        height="360"
-        src={`http://www.youtube.com/embed/${video.id}`}
+        height="360px"
+        src={`https://www.youtube.com/embed/${video.id}`}
         frameBorder="0"
       />
       <h2>{video.snippet.title}</h2>
